@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  height: 650px;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+.inner{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+#wrap{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+header{
+  width: 200px;
+}
+/*header*/
+header .inner{
+  padding: 20px 0;
+  background-color: antiquewhite;
+}
+header .h-logo{
+  width: 200px;
+  height: 60px;
+}
+header .h-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header .gnb{
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+header .gnb > li a{
+  display: block;
+  padding: 10px 0;
+
+}
+header .gnb > li:hover a{
+  background-color: crimson;
+  color: #fff;
+  
+}
+header .gnb .depth2{
+  position: absolute;
+  right: -160px;
+  top: 10px;
+  z-index: 999;
+}
+header .gnb .depth2 li{
+  width: 180px;
+}
+header .gnb .depth2 li:hover a{
+  display: block;
+  background-color: #fff;
+  color: crimson;
+  font-weight: bold;
+}
+/*main-visual*/
+main{
+  width: 800px;
+}
+#main-visual .swiper{
+  overflow: hidden;
+}
+#main-visual ul{
+  display: flex;
+}
+#main-visual ul li{
+  position: relative;
+  height: 350px;
+}
+#main-visual ul li span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
